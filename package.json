@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "PDFyze is a cutting-edge document conversion tool designed to streamline the process of converting Office files to PDF format. With its intuitive interface and powerful conversion engine, PDFyze caters specifically to the needs of the Gen Z demographic, providing a seamless and efficient solution for transforming documents on the go.",
   "main": "src/app.ts",
-  "repository": "https://github.com/RahulBaraiya01/PDFify.git",
+  "repository": "https://github.com/RahulBaraiya01/PDFyze.git",
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/app.js",

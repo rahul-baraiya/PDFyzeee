@@ -3,7 +3,7 @@ const router: Router = express.Router();
 import pdfController from "../Controllers/pdfController";
 
 router.get("/", (req, res) => {
-  res.status(200).send("Welcome to the PDFify App Backend API!.");
+  res.status(200).send("Welcome to the PDFyze App Backend API!.");
 });
 
 router.post("/office-to-pdf", pdfController.officeToPDF);

@@ -8,10 +8,11 @@ dotenv.config();
 const port = process.env.PORT || 5000;
 const app = express();
 
+// app.use(express.static(path.join(__dirname, "Public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
-app.use(fileUpload())
+app.use(fileUpload());
 
 app.use("/", router);
 
@@ -33,5 +34,5 @@ app.use((error: any, req: Request, res: Response, next: NextFunction) => {
 });
 
 app.listen(port, () => {
-  console.log(`PDFify backend API is running at http://127.0.0.1:${port}`);
+  console.log(`PDFyze backend API is running at http://127.0.0.1:${port}`);
 });
