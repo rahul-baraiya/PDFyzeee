@@ -1,0 +1,28 @@
+{
+  "name": "PDFyze",
+  "version": "1.0.0",
+  "description": "PDFyze is a cutting-edge document conversion tool designed to streamline the process of converting Office files to PDF format. With its intuitive interface and powerful conversion engine, PDFyze caters specifically to the needs of the Gen Z demographic, providing a seamless and efficient solution for transforming documents on the go.",
+  "main": "src/app.ts",
+  "repository": "https://github.com/RahulBaraiya01/PDFify.git",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev:start": "npm run build && nodemon dist/app.js",
+    "dev": "tsc-watch --onSuccess \"node dist/app.js\""
+  },
+  "author": "Rahul Baraiya",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.0",
+    "libreoffice-convert": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-fileupload": "^1.5.0",
+    "nodemon": "^3.1.1"
+  }
+}

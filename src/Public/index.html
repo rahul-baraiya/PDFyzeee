@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office to PDF Converter</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfkit/0.12.0/pdfkit.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">PDFyze</div>
+        <div class="auth-buttons">
+            <!-- <button class="login">Login</button>
+            <button class="signup">Sign up</button> -->
+            <img src="./pdf.svg" alt="PDF Logo">
+        </div>
+    </header>
+    <main>
+        <h1>Convert Office to PDF</h1>
+        <p>Convert your Office documents to PDF.<br>Powered by PDFyze Documents.</p>
+        <div class="upload-section">
+            <input type="file" id="pdfUpload" hidden>
+            <label for="pdfUpload" class="upload-button">Select file</label>
+            <div class="upload-options">
+                <!-- <button class="cloud-button">Google Drive</button>
+                <button class="cloud-button">Dropbox</button> -->
+            </div>
+        </div>
+        <div class="loader" id="loader"></div>
+    </main>
+    <footer>
+        <p>Developed with <span class="heart">♥</span> by <a href="https://github.com/RahulBaraiya01" target="_blank">Rahul Baraiya</a></p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
