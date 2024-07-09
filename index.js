@@ -9,7 +9,7 @@ document
       // Show the loader
       document.getElementById("loader").classList.add("active");
 
-      fetch("https://pdfyze.onrender.com/office-to-pdf", {
+      fetch("http://ec2-13-127-253-113.ap-south-1.compute.amazonaws.com:5000/office-to-pdf", {
         method: "POST",
         body: formData,
       })
