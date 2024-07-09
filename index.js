@@ -9,10 +9,13 @@ document
       // Show the loader
       document.getElementById("loader").classList.add("active");
 
-      fetch("http://ec2-13-127-253-113.ap-south-1.compute.amazonaws.com:5000/office-to-pdf", {
-        method: "POST",
-        body: formData,
-      })
+      fetch(
+        "http://ec2-13-127-253-113.ap-south-1.compute.amazonaws.com:5000/office-to-pdf",
+        {
+          method: "POST",
+          body: formData,
+        }
+      )
         .then((response) => {
           if (!response.ok) {
             throw new Error("Network response was not ok");
